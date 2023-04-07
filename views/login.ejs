@@ -1,0 +1,48 @@
+<%- include('partials/header') %>
+
+  <h1 id="login">Login</h1>
+
+  <div class="container mt-5 center container1">
+
+    <div class="col-lg-5 col-md-8">
+
+      <div class="card" id="form-card">
+        <div id="avatar">
+          <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" alt="img">
+        </div>
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <input type="email" class="form-control" name="username" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Enter your password">
+            </div>
+
+            <% if(failedAttempt){ %>
+              <p style="color:red">Incorrect credentials , please try again</p>
+              <%}%>
+                <button type="submit" class="btn btn-dark btn-block">Login</button>
+          </form>
+        </div>
+        <div>
+          Or you can also sign in with
+        </div>
+
+        <div class="container center auth">
+          <div class="card">
+            <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+              <i class="fab fa-google"></i>
+              Sign In with Google
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <%- include('partials/footer') %>

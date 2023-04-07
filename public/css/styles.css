@@ -1,0 +1,72 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+/* Navbar */
+#navbar1{
+  background-color: black
+}
+
+/* home img icon */
+#home-img{
+  height: 300px;
+  width: 300px;
+}
+
+/* outer container */
+.container1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-card{
+  padding: 10px;
+}
+
+#register{
+  margin: 15px;
+  text-align: center;
+}
+
+#login{
+  margin: 15px;
+  text-align: center;
+}
+.center{
+  align-items: center;
+  text-align: center;
+}
+/* login avatar */
+#avatar{
+  margin-top: 15px;
+}
+#avatar img{
+  margin: 1px;
+  width: 12%;
+  height: 15%;
+}
+
+/* auth icons */
+.auth{
+  width: 55%;
+}
+
+
+/* secrets.ejs */
+.info1{
+  margin-bottom: 80px;
+}
