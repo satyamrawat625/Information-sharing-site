@@ -28,7 +28,7 @@ app.use(passport.session())// tell app to use passport to deal with sessions
 
 mongoose.set('strictQuery', false)
 
-mongoose.connect(process.env.URL, { useNewUrlParser: true })
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true })
 
 const userSchema = new mongoose.Schema({
   email: String,
